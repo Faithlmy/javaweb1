@@ -16,7 +16,7 @@ public class Login1 extends HttpServlet {
 		response.setContentType("text/html");
 		//解决乱码
 		//告诉浏览器自动跳转到utf-8
-		//response.setContentType("text/html;charset = utf-8");
+		response.setContentType("text/html;charset = utf-8");
 		//以utf-8显示
 		response .setCharacterEncoding("uft-8");
 		
@@ -29,7 +29,6 @@ public class Login1 extends HttpServlet {
 		out.println("<input type = 'submit' value = '登录'/><br/>");
 		out.println("</from>");
 	}
-
 	
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
